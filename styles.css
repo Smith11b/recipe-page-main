@@ -81,14 +81,16 @@ ul>li::marker {
 table {
     margin-top: 1rem;
     border-collapse: collapse;
-    /* Ensures borders don't double up */
     width: 100%;
-    /* Optional: Full width table */
+
 }
 
 tr {
     border-bottom: 1px solid var(--Stone-150);
-    /* Adjust color and thickness */
+}
+
+table tr:last-child {
+    border-bottom: none;
 }
 
 tr td:first-child {
